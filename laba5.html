@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		var x = prompt("Введите х");
+		if(/YaBrowser/.test(navigator.appVersion) && /Chrome/.test(navigator.appVersion))
+		{
+			alert("y = " + (4*x));
+		}
+		if(/Edg/.test(navigator.appVersion) && /Chrome/.test(navigator.appVersion))
+		{
+			alert("y = " + (10*x^2));
+		}
+		if(/OPR/.test(navigator.appVersion) && /Chrome/.test(navigator.appVersion))
+		{
+			alert("y = " + (x^2 - 9));
+		}
+		if(navigator.appVersion.length < 20)
+		{
+			alert("y = " + ( -3*x + 9));
+		}
+		if(!/OPR/.test(navigator.appVersion) && !/Edg/.test(navigator.appVersion) && !/YaBrowser/.test(navigator.appVersion) && /Chrome/.test(navigator.appVersion))
+		{
+			alert("y = " + (4*x - 1));
+		}
+	</script>
+	</head>
+	<body>
+	</body>
+</html>
